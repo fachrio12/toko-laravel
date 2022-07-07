@@ -31,8 +31,7 @@ class customersController extends Controller
  'nama' => 'required',
  'alamat' => 'required',
  'telp' => 'required',
- 'username' => 'required',
- 'password' => 'required'
+ 
  ]
  );
  if($validator->fails()) {
@@ -42,8 +41,7 @@ class customersController extends Controller
  'nama' => $request->nama,
  'alamat' => $request->alamat,
  'telp' => $request->telp,
- 'username' => $request->username,
- 'password' => $request->password
+
  ]);
  if($simpan)
  {
@@ -62,8 +60,7 @@ class customersController extends Controller
  'nama' => 'required',
  'alamat' => 'required',
  'telp' => 'required',
- 'username' => 'required',
- 'password' => 'required'
+ 
  ]
  );
  if($validator->fails()) {
@@ -73,8 +70,7 @@ class customersController extends Controller
  'nama' => $request->nama,
  'alamat' => $request->alamat,
  'telp' => $request->telp,
- 'username' => $request->username,
- 'password' => $request->password
+
  ]);
  if($ubah) {
  return Response()->json(['status' => 1]);

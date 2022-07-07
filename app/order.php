@@ -8,6 +8,7 @@ class order extends Model
 {
     protected $table ='order';
     public $timestamps =false;
+    protected $primaryKey ='id_transaksi';
 
-    protected $fillable =['id_pelanggan','id_produk']; 
+    protected $fillable =['tgl_transaksi','grandtotal']; 
 }
